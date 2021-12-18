@@ -3,11 +3,11 @@
 import random
 
 NUM = random.randint(1,100)  # 1~100 間の乱数を生成
-print("1~100 から数字を当てるゲーム ! 合計 7 回のチャンス ! ") # ゲームルール説明
-print(NUM)
+print("【百以内の数字を当てるゲーム 】 合計 7 回のチャンス ! ") # ゲームルール説明
+# print(NUM) # テスト用
 
 for a in range(7):
-    NUM_GUESS = input("1~100 から数字を当ててください ! \n")
+    NUM_GUESS = input("1~100 から数字を当てて見てください ! \n")
     if a == 6 and NUM != int(NUM_GUESS):
         print("もうチャンス残ってない !  \nGame Over ! \n答えは : \"" + str(NUM) + "\" ! ")
         break
