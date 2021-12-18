@@ -8,15 +8,25 @@ print("1~100 から数字を当てるゲーム ! 合計 7 回のチャンス ! "
 
 for a in range(7):
     NUM_GUESS = input("1~100 から数字を当ててください ! ")
+<<<<<<< HEAD
     if a == 6:
         print("チャンスもう残ってない !  Game Over !")
         break
     elif NUM_GUESS.isdigit() == False:
+=======
+    if NUM_GUESS.isdigit() == False:
+>>>>>>> test
         print("1~100 間の数字のみ入力可能 ! 残り" + str(6-a) + "回のチャンス ! ")
     else:
         if NUM == int(NUM_GUESS):
             print("当たり ! おめでとうございます ! ")
             break
+<<<<<<< HEAD
+=======
+        elif a == 6:
+            print("チャンスもう残ってない !  Game Over !")
+            break
+>>>>>>> test
         else:
             if NUM < int(NUM_GUESS):
                 print("大きい ! 残り" + str(6-a) + "回のチャンス ! ")
