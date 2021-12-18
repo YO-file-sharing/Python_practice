@@ -15,13 +15,8 @@ for a in range(7):
         if a == 6:
             print("もうチャンス残ってない !  \nGame Over ! \n答えは : \"" + str(NUM) + "\" ! ")
             break
-<<<<<<< HEAD
         elif NUM_GUESS.isdigit() == False and 1<= int(NUM_GUESS) <= 100:
             print("入力エラー !!! 残り" + str(6-a) + "回のチャンス ! \n")
-=======
-        elif NUM_GUESS.isdigit() == False:
-            print("数字のみ入力可能 !!! 残り" + str(6-a) + "回のチャンス ! \n")
->>>>>>> main
         else:
             if NUM < int(NUM_GUESS):
                 print("大きい ! 残り" + str(6-a) + "回のチャンス ! \n")
