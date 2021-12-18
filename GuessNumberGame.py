@@ -7,18 +7,18 @@ print("1~100 から数字を当てるゲーム ! 合計 7 回のチャンス ! "
 # print(NUM)
 
 for a in range(7):
-    NUM_GUESS = input("1~100 から数字を当ててください ! ")
-    if a == 6:
-        print("チャンスもう残ってない !  Game Over !")
-        break
-    elif NUM_GUESS.isdigit() == False:
-        print("1~100 間の数字のみ入力可能 ! 残り" + str(6-a) + "回のチャンス ! ")
-    else:
-        if NUM == int(NUM_GUESS):
-            print("当たり ! おめでとうございます ! ")
+    NUM_GUESS = input("1~100 から数字を当ててください ! \n")
+    if NUM == int(NUM_GUESS):
+            print("\n当たり ! おめでとうございます ! \n")
             break
+    else:
+        if a == 6:
+            print("もうチャンス残ってない !  \nGame Over ! \n答えは : \"" + str(NUM) + "\" ! ")
+            break
+        elif NUM_GUESS.isdigit() == False:
+            print("数字のみ入力可能 !!! 残り" + str(6-a) + "回のチャンス ! \n")
         else:
             if NUM < int(NUM_GUESS):
-                print("大きい ! 残り" + str(6-a) + "回のチャンス ! ")
+                print("大きい ! 残り" + str(6-a) + "回のチャンス ! \n")
             elif NUM > int(NUM_GUESS):
-                print("小さい ! 残り" + str(6-a) + "回のチャンス ! ")
+                print("小さい ! 残り" + str(6-a) + "回のチャンス ! \n")
