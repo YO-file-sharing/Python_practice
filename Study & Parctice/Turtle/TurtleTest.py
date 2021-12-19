@@ -2,11 +2,11 @@ import turtle as t
 
 t.tracer(False)
 a, b, c = t.Pen(), t.Pen(), t.Pen()
-NumT = 0
+NumT = 1
 
 def try1(d, ang):
     global NumT
-    for x in range(100 * (NumT + 1)):
+    for x in range(100 * NumT):
         d.forward(x)
         d.left(ang)
     NumT += 1
