@@ -1,6 +1,7 @@
 # 数字を当てるゲーム
 
 import random
+import sys
 
 NUM = random.randint(1,100)  # 1~100 間の乱数を生成
 print("【百以内の数字を当てるゲーム 】 合計 7 回のチャンス ! ") # ゲームルール説明
@@ -26,3 +27,7 @@ for a in range(7):
                         print("小さい ! 残り" + str(6-a) + "回のチャンス ! \n")
             else:
                 print("入力エラー !!! 残り" + str(6-a) + "回のチャンス ! \n")
+
+quit = input("終了するには何かのキーを押してください。")
+if quit == True:
+    sys.exit(0)
