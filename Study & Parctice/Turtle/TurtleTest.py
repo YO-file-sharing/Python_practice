@@ -12,13 +12,13 @@ def try1(d, ang):
     NumT += 1
 
 a.color("#008000")
-try1(a, 39, NumT)
+try1(a, 39)
 # NumT += 1
 b.color("#808000")
-try1(b, 59, NumT)
+try1(b, 59)
 # NumT += 1
 c.color("#800000")
-try1(c, 99, NumT)
+try1(c, 99)
 # NumT += 1
 
 t.done()
