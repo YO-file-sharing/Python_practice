@@ -4,13 +4,13 @@ import random
 import sys
 
 NUM = random.randint(1,100)  # 1~100 間の乱数を生成
-print("【百以内の数字を当てるゲーム 】 合計 7 回のチャンス ! ") # ゲームルール説明
+print("【数字を当てるゲーム 】 合計 7 回のチャンス ! ") # ゲームルール説明
 # print(NUM) # テスト用
 
 for a in range(7): # チャンスを 7 回に設定
-    NUM_GUESS = input("1~100 から数字を当てて見てください ! \n")
+    NUM_GUESS = input("1~100 の中から数字を当ててください ! \n")
     if a == 6 and NUM != int(NUM_GUESS): # Game over 条件を定義
-        print("もうチャンス残ってない !  \nGame Over ! \n答えは : \"" + str(NUM) + "\" ! ")
+        print("Game Over ! \n答えは : \"" + str(NUM) + "\" ! ")
         break
     else:
         if NUM_GUESS.isdigit() == False : # 数字以外入力した場合のエラー条件定義
