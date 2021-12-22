@@ -1,4 +1,4 @@
-# 数字を当てるゲーム
+# 数字を当てるゲーム Ver 20211222.1
 
 import random
 import sys
