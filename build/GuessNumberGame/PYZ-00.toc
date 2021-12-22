@@ -640,8 +640,8 @@
   ('tracemalloc',
    'C:\\ProgramData\\Anaconda3\\lib\\tracemalloc.py',
    'PYMODULE'),
-  ('stringprep', 'C:\\ProgramData\\Anaconda3\\lib\\stringprep.py', 'PYMODULE'),
   ('_py_abc', 'C:\\ProgramData\\Anaconda3\\lib\\_py_abc.py', 'PYMODULE'),
+  ('stringprep', 'C:\\ProgramData\\Anaconda3\\lib\\stringprep.py', 'PYMODULE'),
   ('random', 'C:\\ProgramData\\Anaconda3\\lib\\random.py', 'PYMODULE'),
   ('statistics', 'C:\\ProgramData\\Anaconda3\\lib\\statistics.py', 'PYMODULE'),
   ('fractions', 'C:\\ProgramData\\Anaconda3\\lib\\fractions.py', 'PYMODULE')])
