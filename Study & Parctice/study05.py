@@ -6,7 +6,8 @@ while True:
     while True:
         a = input("Please enter a number.\n")
         if a.isdigit() == True:
-            b = input("""The number is \"{}\" ,right ?\nPlease answer with \'yes\' or \'no\'.\n""".format(a))
+            b = input("""The number is \"{}\" ,right ?\n
+Please answer with \'yes\' or \'no\'.\n""".format(a))
             if b.lower() == "yes":
                 # print("Thank you !")
                 break
