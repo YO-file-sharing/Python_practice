@@ -1,14 +1,14 @@
 from random import *
 
-NUM = randint(1,100)
-print(NUM)
+NUM = randint(1,10)
+# print(NUM)
 while True:
     while True:
-        a = input("Please enter a number.\n")
+        a = input("Please enter a number between 1 and 10.\n")
         if a.isdigit() == True:
             b = input("""The number is \"{}\" ,right ?\n
 Please answer with \'yes\' or \'no\'.\n""".format(a))
-            if b.lower() == "yes":
+            if b.lower() == "yes" or b.lower() == "y":
                 # print("Thank you !")
                 break
             else:
