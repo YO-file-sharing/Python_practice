@@ -1,4 +1,4 @@
-import random as r
+from random import randint
 import turtle as t
 
 t.tracer(False)
@@ -10,9 +10,9 @@ def main(x1, x2, y1, y2, Color):
     t.goto(x1,y1)
     t.color(Color)
     for i in range(5000):
-        t.goto(r.randint(x1, x2), r.randint(y1, y2))
+        t.goto(randint(x1, x2), randint(y1, y2))
         t.pendown()
-        t.circle(r.randint(1, 5))
+        t.circle(randint(1, 5))
         t.penup()
 
 main(x1=-205, x2=-5, y1=5, y2=205, Color = "#F25022")
