@@ -5,18 +5,48 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Edge",
-            "request": "launch",
-            "type": "pwa-msedge",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "pwa-chrome",
+            "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
-        }
+          },
+          {
+            "type": "chrome",
+            "request": "launch",
+            "name": "使用本地chrome调试",
+            "file": "${file}",
+            "port":8000,
+        },
+        {
+        "name": "Launch Edge",
+        "request": "launch",
+        "type": "pwa-msedge",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Edge",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-msedge",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
     ]
 }
