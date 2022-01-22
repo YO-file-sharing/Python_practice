@@ -1,13 +1,13 @@
-x = 10000
-t = 0.0325
-Years = 0
+# x = 10000
+# t = 0.0325
+# Years = 0
 
-while True:
-    x *= (1 + t)
-    Years += 1
-    if x >= 20000:
-        print(f"{Years}年が必要。")
-        break
+# while True:
+#     x *= (1 + t)
+#     Years += 1
+#     if x >= 20000:
+#         print(f"{Years}年が必要。")
+#         break
 
 
 # x = 100 # ボールの高さ
