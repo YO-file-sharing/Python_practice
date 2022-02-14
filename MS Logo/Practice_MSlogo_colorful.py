@@ -1,5 +1,4 @@
 # 色付き MS ロゴ
-# 関数を定義しましょう。
 
 import turtle as t
 t.hideturtle()
